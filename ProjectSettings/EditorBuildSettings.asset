@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartPage.unity
+    guid: 3b53839651f2ee24d802f76494d4c515
+  - enabled: 1
+    path: Assets/Scenes/ARPage.unity
+    guid: 5d7bc19b35b00b84db78441bf79c5b15
+  - enabled: 1
+    path: Assets/Scenes/SuspectPage.unity
+    guid: 9945c6f9c027c824e8ce19b27d30c4e6
+  - enabled: 1
+    path: Assets/Scenes/VictimPage.unity
+    guid: f911c9fc3abdbd34d860d101afd0eb08
+  - enabled: 1
+    path: Assets/Scenes/GameEndingPage.unity
+    guid: 0460bb7b8cf420247a71ffe7e6b874a7
+  m_configObjects: {}

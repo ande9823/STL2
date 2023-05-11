@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="QR5" size="282.000000 283.003571" />
+    <ImageTarget name="QR4" size="1.000000 0.996491" />
+    <ImageTarget name="QR3" size="1.000000 0.989474" />
+    <ImageTarget name="QR1" size="1.000000 1.003559" />
+    <ImageTarget name="QR2" size="1.000000 1.003559" />
+  </Tracking>
+</QCARConfig>
