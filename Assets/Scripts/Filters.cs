@@ -21,29 +21,37 @@ public class Filters : MonoBehaviour
     public void XRayFilter(){
         if (!filterOn) {
             filterOn = true;
-            Debug.Log("xray is on");
             
             librarianRenderer = librarian.transform.GetChild(2).GetComponent<SkinnedMeshRenderer>();
             trainerRenderer = trainer.transform.GetChild(2).GetComponent<SkinnedMeshRenderer>();
             baristaRenderer = barista.transform.GetChild(2).GetComponent<SkinnedMeshRenderer>();
             
-            librarianMats = librarianRenderer.materials;
-            trainerMats = trainerRenderer.materials;
-            baristaMats = baristaRenderer.materials;
-
-            librarianRenderer.materials = xrayMat;
-            trainerRenderer.materials = xrayMat;
-            baristaRenderer.materials = xrayMat;
-
-            Debug.Log("mesh should be updated");
+            if (librarianRenderer != null) {
+                librarianMats = librarianRenderer.materials;
+                librarianRenderer.materials = xrayMat;
+            }
+            if (trainerRenderer != null) {
+                trainerMats = trainerRenderer.materials;
+                trainerRenderer.materials = xrayMat;
+            }
+            if (baristaRenderer != null) {
+                baristaMats = baristaRenderer.materials;
+                baristaRenderer.materials = xrayMat;
+            }
 
         } else if (filterOn) {
             filterOn = false;
-            Debug.Log("xray is off");
 
-            librarianRenderer.materials = librarianMats;
-            trainerRenderer.materials = trainerMats;
-            baristaRenderer.materials = baristaMats;
+            if (librarianRenderer != null) {
+                librarianRenderer.materials = librarianMats;
+            }
+            if (trainerRenderer != null) {
+                trainerRenderer.materials = trainerMats;
+            }
+            if (baristaRenderer != null) {
+                baristaRenderer.materials = baristaMats;
+            }
+
         }
     }
 }
